@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap" rel="stylesheet">
+    <script
+src="https://kit.fontawesome.com/71021cd7c9.js"
+crossorigin="anonymous"
+></script>
+</head>
+<body>
+    <section id="header">
+    <nav>
+        <div class="nav__container container">
+            <div class=" nav__row row">
+                <figure class="logo__img--wrapper">
+                    <img src="/assets/1739256141318.svg" class="logo__img" alt="">
+                </figure>
+                <div class="nav__links">
+                    <a href="" class="nav__link link__hover--effects link__hover-effects--black"> About</a>
+                    <a href="" class="nav__link link__hover--effects link__hover-effects--black">Projects</a>
+                    <a href="" class="nav__link link__hover--effects link__hover-effects--black">Contact</a>
+                   <button class=" nav__btn link__hover--effect" href="">
+                       <i class="fa-solid fa-circle-half-stroke"></i>
+                   </button> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <header class="header__container container">
+            <div class="header__row row">
+                <h1 class="header__title green" > Hey </h1>
+                <h2 class="header__sub--title">I'm <span class="green">Zach.</span></h2>
+                <p class="header__description section__para">I am a <span class="green"> frontend software engineer </span>. 
+    
+                    I make modern websites with a focus on user expirence.</p>
+                    <br>
+                    Here is a more <strong class="green"> about me.</strong> 
+                <div class="header__link--icons">
+                    <a class="header__link link__hover--effect link__hover-effect--black"  target="_blank" href="https://www.linkedin.com/in/zachary-lenhart-0317981b6/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="header__link link__hover--effect link__hover-effect--black" target="_blank" href="https://github.com/zach-lenhart">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="header__link link__hover--effect link__hover-effect--black" href="">
+                        <i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="#">
+            <button class="mail__btn link__hover--effect">
+                <i class="fa-solid fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click link__hover--effect">
+                
+            </div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <div class="modal__row">
+                    <h3 class="modal__about--title">Here's a bit about me</h3>
+                    <h4 class="modal__about--title-sub"> Frontend Software Engineer</h4>
+                    <p class="modal__about--para">I am a <b class="green">hardworking</b> individual with a drive for clean and modern looking websites. I am a <b class="green">problem solver</b> who understands how to fix bugs effeciently.</p>
+                    <div class="modal__about--language-wrapper">
+                        <figure class="modal__languages">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" class="modal__about--language" alt="">
+                            <span class="language__name">CSS</span>
+                        </figure>
+                        <figure class="modal__languages">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"  class="modal__about--language" alt="">
+                            <span class="language__name">Java</span>
+                        </figure>
+                        <figure class="modal__languages">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" class="modal__about--language" alt="">
+                            <span class="language__name">CSS</span>
+                        </figure>
+                        <figure class="modal__languages">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" class="modal__about--language" alt="">
+                            <span class="language__name">Java</span>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title">Let's Have a Chat</h3>
+                <h4 class="modal__sub--title">I would love to hear from you</h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label for="name" class="form__item--label"> Name</label>
+                        <input type="text" name="user_name"  required> </input >
+                    </div>
+                    <div class="form__item">
+                        <label for="email" class="form__item--label"> Email</label>
+                        <input type="email" name="user_email"  required></input >
+                    </div>
+                    <div class="form__item">
+                        <label for="message" class="form__item--label"> Message</label>
+                        <textarea type="text" name="message"  required></textarea >
+                    </div>
+                    <button id="contact__submit" class="form_sumbit">Send It My Way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the Message. Looking forward to speaking to you soon.
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark modal__exit link__hover--effect"></i>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects__container">
+            <div class="projects__row">
+              <h1 class="projects__title">Here are some of my <span class="green">Projects.</span></h1>  
+              <ul class="project__list">
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="assets/blinker mockup.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+
+                            <div class="project__description">
+                                <h3 class="project__description__title">Blinker</h3>
+                                <h4 class="project__description--sub-title">HTML,VUE,CSS,Java</h4>
+                                <p class="project__description--para">An e-commerce store for the sales and purchases of a vehicles.</p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="assets/Screenshot 2025-02-15 at 12.39.22 PM.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+
+                            <div class="project__description">
+                                <h3 class="project__description__title"> Library</h3>
+                                <h4 class="project__description--sub-title">HTML,CSS,Java</h4>
+                                <p class="project__description--para">Book store with working payment processing and store front.</p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link"></a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="assets/Screenshot 2025-03-15 at 9.55.24 PM.png" class="project__img" alt="">
+                        <div class="project__wrapper--bg">
+
+                            <div class="project__description">
+                                <h3 class="project__description__title"> Social Link Page</h3>
+                                <h4 class="project__description--sub-title">HTML,CSS,Java</h4>
+                                <p class="project__description--para">A simple social link page with the code for "organic" yelp reviews. </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/zach-lenhart/National-First-Response-Social-Links" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://zach-lenhart.github.io/National-First-Response-Social-Links/" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class="footer__container">
+        <div class="footer__row">
+            <a href="#" class="footer__logo--wrapper link__hover--effect">
+
+                <img src="assets/1739256141318.svg" class="footer__logo" alt="">
+                <div class="to__the--top">Top ↑</div>
+            </a>
+            <div class="footer__links">
+                <a href="" class="footer__link link__hover--effects link__hover--effects-white"> Github</a>
+                <a href="" class="footer__link link__hover--effects link__hover--effects-white">LinkedIn</a>
+                <a href="#" class="footer__link link__hover--effects link__hover--effects-white">Contact</a>
+                <a href="" class="footer__link link__hover--effects link__hover--effects-white">Resume</a>
+            </div>
+            <h4 class="footer__copywrite">Copywrite 2025 Zachary Lenhart</h4>
+        </div>
+    </div>
+    </footer> 
+</body>
+
+</html>
